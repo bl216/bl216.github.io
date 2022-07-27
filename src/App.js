@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./Navbar";
+import Posts from "./pages/Posts";
+import Projects from "./pages/Projects";
+import Home from "./pages/Etc";
+import Footer from "./Footer";
+import {Route, Routes, BrowserRouter} from "react-router-dom";
+import ConnectGithubSshPage from "./pages/ConnectGithubSshPage";
+import CreateRockylinuxDockerPage from "./pages/CreateRockylinuxDockerPage";
+import MakeGithubPagePage from "./pages/MakeGithubPagePage";
+import GenerateKeypair from "./pages/GenerateKeypair";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Navbar/>
+            <Routes>
+                <Route path="/home" element={<Home/>}/>
+                <Route path="/" element={<Posts/>}/>
+                <Route path="/projects" element={<Projects/>}/>
+                <Route path="/ConnectGithubSshPage" element={<ConnectGithubSshPage/>}/>
+                <Route path="/CreateRockylinuxDockerPage" element={<CreateRockylinuxDockerPage/>}/>
+                <Route path="/MakeGithubPagePage" element={<MakeGithubPagePage/>}/>
+                <Route path="/GenerateKeypairPage" element={<GenerateKeypair/>}/>
+            </Routes>
+            <Footer/>
+        </BrowserRouter>
+    )
 }
 
 export default App;
