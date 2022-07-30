@@ -73,13 +73,17 @@ function ConnectGithubSshPage() {
                             깃 초기설정이 필요하다. 안되어있으면 아래를 먼저.
                         </p>
 
-                        <p>
-                            <div className="post-categories">
-                                <Link to="/gitinitial">
-                                    깃 초기설정
-                                </Link>
+                        <div className="language-bash highlighter-rouge">
+                            <div className="highlight">
+                                <pre className="highlight">
+                                    <code>
+                                        % git init<br/>
+                                        % git config --global user.email "blcu216@gmail.com"<br/>
+                                        % git config --global user.name "bl216"
+                                    </code>
+                                </pre>
                             </div>
-                        </p>
+                        </div>
 
                         <p>
                             아래 커맨드로 확인가능

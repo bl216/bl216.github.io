@@ -20,6 +20,14 @@ export default function Posts() {
                         <ul className="posts-list">
                             <li>
                                 <strong>
+                                    <Link to="/MakeGithubRepository">
+                                        How to make Github repository
+                                    </Link>
+                                </strong>
+                                <span className="post-date"> - July 30 2022</span>
+                            </li>
+                            <li>
+                                <strong>
                                     <Link to="/ConnectGithubSshPage">
                                         How to connect to Github using SSH
                                     </Link>
@@ -30,6 +38,21 @@ export default function Posts() {
                                 <strong>
                                     <Link to="/MakeGithubPagePage">
                                         How to make Github Page using React
+                                    </Link>
+                                </strong>
+                                <span className="post-date"> - July 30 2022</span>
+                            </li>
+
+                        </ul>
+
+                        <h2>
+                            Node.js
+                        </h2>
+                        <ul className="posts-list">
+                            <li>
+                                <strong>
+                                    <Link to="/InstallNodejsAndNpm">
+                                        How to install Node.js and npm in MacOS
                                     </Link>
                                 </strong>
                                 <span className="post-date"> - July 30 2022</span>

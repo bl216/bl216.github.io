@@ -9,6 +9,8 @@ import ConnectGithubSshPage from "./pages/ConnectGithubSshPage";
 import CreateRockylinuxDockerPage from "./pages/CreateRockylinuxDockerPage";
 import MakeGithubPagePage from "./pages/MakeGithubPagePage";
 import GenerateKeypair from "./pages/GenerateKeypair";
+import InstallNodejsAndNpm from "./pages/InstallNodejsAndNpm";
+import MakeGithubRepository from "./pages/MakeGithubRepository";
 
 function App() {
     return (
@@ -22,6 +24,9 @@ function App() {
                 <Route path="/CreateRockylinuxDockerPage" element={<CreateRockylinuxDockerPage/>}/>
                 <Route path="/MakeGithubPagePage" element={<MakeGithubPagePage/>}/>
                 <Route path="/GenerateKeypairPage" element={<GenerateKeypair/>}/>
+                <Route path="/InstallNodejsAndNpm" element={<InstallNodejsAndNpm/>}/>
+                <Route path="/MakeGithubRepository" element={<MakeGithubRepository/>}/>
+
             </Routes>
             <Footer/>
         </BrowserRouter>

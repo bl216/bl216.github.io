@@ -12,7 +12,7 @@ body {
 }
 
 p {
-    margin: 0 0 14.4px;
+    margin: 25px 0 5px;
 }
 
 p img {
@@ -437,3 +437,24 @@ code.highlighter-rouge {
         margin-right:0
     }
 }
+
+
+
+
+
+
+
+
+/*
+.mac-terminal-color-skyblue {
+    color: #60b8c4;
+}
+
+.mac-terminal-color-red {
+    color: #b4432c;
+}
+
+.mac-terminal-color-green {
+    color: #5fba42;
+}
+*/
